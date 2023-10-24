@@ -1,6 +1,6 @@
 default_stages: [commit, push]
 fail_fast: false
-exclude: ^(manim/grpc/gen/|docs/i18n/)
+exclude: ^(docs/i18n/|\.github/)
 repos:
   - repo: https://github.com/pre-commit/pre-commit-hooks
     rev: v4.5.0
@@ -75,4 +75,4 @@ repos:
     hooks:
       - id: codespell
         files: ^.*\.(py|md|rst)$
-        args: ["-L", "medias,nam"]
+        args: ["-L", "medias,nam,strager"]

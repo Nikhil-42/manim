@@ -1109,7 +1109,7 @@ class ManimConfig(MutableMapping):
     upto_animation_number = property(
         lambda self: self._d["upto_animation_number"],
         lambda self, val: self._set_pos_number("upto_animation_number", val, True),
-        doc="Stop rendering animations at this nmber.  Use -1 to avoid skipping (-n).",
+        doc="Stop rendering animations at this number.  Use -1 to avoid skipping (-n).",
     )
 
     max_files_cached = property(
